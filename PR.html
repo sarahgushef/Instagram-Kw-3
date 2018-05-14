@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Instagram KW 10</title>
+
+    <!-- tulisan instagram cantik -->
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+
+    <!-- symbol search di dalam search-box -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <style>
+        body
+        {
+            background-color: #fafafa;
+            text-align: center;
+        }
+        /* -------------------------- Bagian Header ------------------ */
+        header
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 70px;
+            border-bottom: 1px solid #dddcdc;
+            grid-gap: 10px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        ::-moz-placeholder
+        {
+            text-align: center;
+        }
+
+        ::-webkit-input-placeholder
+        {
+            text-align: center;
+        }
+
+        /* -------------Bagian Profil -----------------*/
+        
+        #profile
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-auto-rows: 180px;
+            grid-gap: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        .gambarprofil img
+        {
+            max-width: 150px;
+            height:150px;
+            border-radius: 50%;
+            padding: 25px
+        }
+
+        .aboutsection
+        {
+            text-align: left;
+        }
+
+        ul
+        {
+            list-style: none;
+        }
+
+        li
+        {
+            display: inline;
+        }
+
+        .button-profile
+        {
+            width: 100px;
+            height: 20px;
+        }
+
+        #gambarsetting
+        {
+            width: 15px;
+            height: 15px;
+        }
+        
+        /* ------------------------Bagian Posts - Saved-------------------- */
+        #posts-saved
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 50px;
+            border-top: 1px solid #dddcdc;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-top: 10px;
+            grid-column-gap: 10px;
+            
+        }
+
+        .post
+        {
+            text-align: right;
+            font-family: 'Segoe UI';
+        }
+
+        .save
+        {
+            text-align: left;
+            font-family: 'Segoe UI';
+        }
+
+        /* ---------------------------Bagian foto-foto ----------------*/
+        
+        #content
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 300px;
+                grid-gap: 10px;
+                max-width: 900px;
+                margin: 0 auto; /* --> untuk membuat elemen di tengah */
+            }
+
+        @media screen and (min-width: 600px)
+        {
+            #content
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 300px;
+                grid-gap: 10px;
+                max-width: 900px;
+                margin: 0 auto; /* --> untuk membuat elemen di tengah */
+            }
+        }
+
+        .kotak img
+        {
+            width: 287px;
+            height: 287px;
+            object-fit: inherit;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <!-- ==================================== Bagian Header =================================================== -->
+    <header>
+        <div class="home">
+            <ul>
+                <li>
+                    <img src="https://png.icons8.com/ios/1600/instagram-new.png" width="40px" style="position: absolute";>
+                    <span style="font-family:'Grand Hotel'; font-size: 30px"> &emsp; &emsp;| Instagram </span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li><input type="text" style="height:20px; width:200px; font-family:FontAwesome" placeholder="&#xF002; Search"></li>
+            </ul>
+        </div>
+
+        <div class="icon">
+            <ul>
+                <li>
+                    <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-73-256.png" width="40px">
+                </li>
+                <li>
+                    <img src="https://cdn1.iconfinder.com/data/icons/twitter-ui/48/jee-04-256.png" width="40px"> 
+                </li>
+                <li>
+                    <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-256.png" width="40px">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ==================================== Bagian Profile =================================================== -->
+    
+    <div id="profile">
+        <div class="gambarprofil"> <img src="https://www.friskies.co.id/files/ImageArticles/juli/juli1.jpg"></div>
+        <div class="aboutsection">
+            <ul>
+                <li> <span style="font-family:'Segoe UI'; font-size: 25px; position: absolute"> hello_miu</span>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;
+                    <button type="button" id="button-profile" style="position: absolute"> Edit Profile</button> 
+                    &emsp; &emsp; &emsp; &emsp; &emsp;
+                    <img src="https://cdn4.iconfinder.com/data/icons/heistcon-1/512/settings-256.png" width="20px"> 
+                </li>
+            </ul>
+            <ul>
+                <li><b> 9 </b> posts &emsp; &emsp; </li>
+                <li><b> 0 </b> followers &emsp; &emsp;</li>
+                <li><b> 0 </b> following </li>
+            </ul>
+
+            <ul>
+                <li><b> Meowy</b> Hellow! We're Miu. We like playing and eating fishy fishy. Nice to Meet Cha!!!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="posts-saved">
+        <div class="post" > <b> POSTS </b> </div>
+        <div class="save"> <b> SAVED </b></div>
+    </div>
+
+    <!-- ==================================== Bagian Foto2 =================================================== -->
+    
+    <div id="content">
+        <div class="kotak"> <img src="https://i.ytimg.com/vi/5TyDk2PAaJ4/maxresdefault.jpg"></div>
+        <div class="kotak"> <img src="http://dgwrlxstb34qz.cloudfront.net/media/embed/original/1510104047_si-kucing-rexie.jpg"> </div>
+        <div class="kotak"> <img src="https://flagig.com/wp-content/uploads/2017/05/Instagrams-most-famous-cat-Nala16__605.jpg"> </div>
+        <div class="kotak"> <img src="http://3.bp.blogspot.com/-x0uTfqK7uZY/Uw1LzFk-vYI/AAAAAAAACfU/lSB6EF09NdM/s1600/600px-cat-with-dilated-pupils.jpg"> </div>
+        <div class="kotak"> <img src="https://1.bp.blogspot.com/-RHn-7jaGNCI/Vrrd2JthZsI/AAAAAAAALaw/ywYhrQ3Sf20/s1600/2.jpg"> </div>
+        <div class="kotak"> <img src="https://cdn.qubicle.id/images/2017/10/01/1a7ca1eed78c59e4c316ff628af9950b.jpg?w=700&q=80"> </div>
+        <div class="kotak"> <img src="https://www.inovasee.com/wp-content/uploads/2016/11/pumpkin-kucing-eyeliner.jpg"></div>
+        <div class="kotak"> <img src="http://www.sosyalevcil.com/wp-content/uploads/2017/10/f8692b4dde8249b26719f91e076aa8ab.jpg"> </div>
+        <div class="kotak"> <img src="https://www.zetizen.com/uploads/post/2016/05/19/kucing-lucu-Indonesia_(meongku.com)_.jpg"> </div>
+    </div> 
+</body>
+</html>
